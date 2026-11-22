@@ -33,7 +33,7 @@ A READY state confirms a successful Vercel build/deployment state only. It does 
 ## Current blockers (must be cleared before integration)
 
 1. Obtain complete, versioned V5 source (including both API modules, HTML, package manifest, Vercel config and environment-variable names only; never commit secret values).
-2. Separate V4 and V5 Vercel Git deployment scopes. The same `v5-development` commit currently creates Preview deployments in both projects. Do not assume the project preview-disable setting has stopped this: the V4 Preview was observed after the setting update.
+2. Separate V4 and V5 Vercel Git deployment scopes. The same `v5-development` commit currently creates Preview deployments in both projects. The V4 Preview recorded above was created shortly before the project setting update. The effect of the preview-disable setting on subsequent commits has not yet been verified; check the next deployment event before treating the separation as solved.
 3. Obtain a complete V4 source/data export and define a reviewed anonymization alias map before changing any source records or comments.
 4. Build a deterministic migration adapter and reconcile source, migrated, rejected, duplicate and exception counts.
 5. Run browser/API tests, authorization and tenant-isolation tests, client-neutral scans, import/export checks, and user acceptance on V5 Preview.
