@@ -1,0 +1,1 @@
+module.exports=(req,res)=>{res.setHeader('Cache-Control','no-store');res.setHeader('Set-Cookie','ja_v5_session=; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=0');res.statusCode=302;res.setHeader('Location','/');res.end()};
