@@ -7,3 +7,7 @@ Features inherited from V5 include organization analysis, job description, evalu
 Methodology: Job Analysis & Organization Context -> Mercer IPE / Job Evaluation -> Internal Job Grading -> Career Streams & Levels -> Job Families & Sub-families -> Job Profiles.
 
 Important: This remains a browser prototype. Data is stored in localStorage and is not synchronized across users/devices. It does not yet provide server-side tenant isolation, authentication, role-based permissions, cloud database, server-side audit log or approval workflow. Mercer IPE scores are recorded as provided; no licensed IPE score calculation is performed. Validate imported data before operational use.
+
+
+## Mandatory design standard
+See `docs/CORE_DESIGN_PRINCIPLES.md` for the seven mandatory design principles and release acceptance checklist. See `docs/VERSION_MANIFEST.md` for synchronization requirements across Platform, methodology, training and consulting projects. Do not describe V6 as production-complete until the release checklist is verified.
